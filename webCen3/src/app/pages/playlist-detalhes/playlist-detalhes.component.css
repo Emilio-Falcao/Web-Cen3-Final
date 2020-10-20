@@ -1,0 +1,80 @@
+.row{
+  margin-bottom: 1.5%;
+  margin-top: 1.5%
+}
+li{
+    list-style: none;
+    box-sizing: border-box;
+    color:white;
+    background:black
+}
+.title{
+font-weight: bold;
+
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    margin-bottom: 10%;
+    
+}.listaMusicas{
+    margin:1rem 0;
+
+
+}.listaMusicas li{
+    margin:0.4rem 0;
+    border-bottom: 1px solid rgba(0, 0,0, 0.2);
+    padding:0.2rem;
+    cursor: pointer;
+}
+
+.listaMusicas li:hover{
+  color:rgba(0, 0,0, 0.6);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }.btn{
+     float:right;
+     color:white;
+     background:black;
+     padding:0.3em;
+     border:none;
+     border-radius: 0.4em;
+     cursor: pointer;
+     letter-spacing: 0.3px;
+  }
+.listaMusicas li.selected{
+background:#32CD32;
+color:white;
+font-weight: bold;
+  }
+  .flex-container {
+    display: flex;
+    background-color: black;
+  }
+
+  .flex-container > div {
+    background-color:black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration-color: aqua;
+    
+  }
+  

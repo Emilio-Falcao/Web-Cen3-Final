@@ -1,0 +1,28 @@
+
+
+<div class="flex-container">
+ 
+    
+  
+  <div class="row">
+    <div class="section col s4">
+      <ul class="listaMusicas">
+        <li *ngFor="let lista of PlaylistDetalhes" (click)="onSelect(lista)" 
+        [class.selected]="lista===listaClicada">
+          <span class="badge"><img [src]="lista.foto" alt="100" width="100">{{lista.album}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+<div class="container"*ngIf="listaClicada" class="details">
+  <h2>{{listaClicada.nome}}</h2>
+  <ul class="list-group">
+    
+    <li class="list-group-item"*ngFor = " let a of listaClicada.audio">{{a.id}}{{a.nome}}{{a.artista}}
+      <audio controls [src]="a.musica"></audio></li>
+
+    
+  </ul>
+</div>

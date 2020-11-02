@@ -15,9 +15,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list';
 
+import { AngularFireModule} from '@angular/fire/';
+import { AngularFireDatabaseModule} from '@angular/fire/database';
+
 
 import { from } from 'rxjs';
 import { UsuarioService } from './usuario.service';
+import { environment } from 'src/environments/environment';
+import { LoginComponent } from './pages/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,10 +33,13 @@ import { UsuarioService } from './usuario.service';
     PlaylistComponent,
     PlaylistDetalhesComponent,
     CadastroComponent,
+    LoginComponent,
+
 
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule,MatDialogModule, BrowserAnimationsModule,
-    HttpClientModule,MatGridListModule
+    HttpClientModule,MatGridListModule,AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [UsuarioService],
   bootstrap: [AppComponent],

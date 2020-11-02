@@ -1,9 +1,50 @@
 {
+  "usuarios": [
+    {
+      "nome": "EMILIO NUNES FALCAO",
+      "email": "emilio.falcao@gmail.com",
+      "confemail": "emilio.falcao@gmail.com",
+      "senha": "123456",
+      "dataNasc": "2020-11-25",
+      "sexo": true,
+      "id": 1
+    },
+    {
+      "nome": "José Antonio",
+      "email": "joseantonio@gmail.com",
+      "confemail": "joseantonio@gmail.com",
+      "senha": "123456",
+      "dataNasc": "1800-02-22",
+      "sexo": true,
+      "id": 2
+    }
+  ],
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nome": "EMILIO NUNES FALCAO",
+      "email": "emilio.falcao@gmail.com",
+      "confemail": "emilio.falcao@gmail.com",
+      "senha": "123456",
+      "dataNasc": "2020-10-23",
+      "sexo": true,
+      "id": 1
+    },
+    {
+      "nome": "João",
+      "email": "joao@gmail.com",
+      "confemail": "joao@gmail.com",
+      "senha": "987654321",
+      "dataNasc": "2020-10-23",
+      "id": 2
+    },
+    {
+      "nome": "EMILIO NUNES FALCAO",
+      "email": "emilio.falcao@gmail.com",
+      "confemail": "emilio.falcao@gmail.com",
+      "senha": "123456",
+      "dataNasc": "2020-10-23",
+      "sexo": true,
+      "id": 3
     }
   ],
   "comments": [

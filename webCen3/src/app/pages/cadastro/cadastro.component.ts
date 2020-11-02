@@ -23,7 +23,8 @@ export class CadastroComponent implements OnInit {
 formUser: FormGroup;
 
 
-
+usuarios:Array<any>;
+usuario:any;
 
 
 
@@ -37,9 +38,9 @@ formUser: FormGroup;
   ngOnInit(): void {
 
    this.configurarFormulario();
-
+    this.usuario = {};
   
-   
+   this.usuarioServ.listar().subscribe(resposta => this.usuarios = resposta);
 
   }
 
@@ -51,7 +52,11 @@ inserir(){
 
   console.log(this.formUser.value);
 
-  this.usuarioServ.setUser(this.formUser.value);
+  this.usuarioServ.criar(this.formUser.value).subscribe(resposta=>{
+    this.usuarios.push(resposta);
+  })
+
+  
 
    alert("Cadastrado com sucesso");
 
@@ -63,8 +68,8 @@ inserir(){
 configurarFormulario(){
   this.formUser = this.fb.group({
     nome:[null, this.vaidarCampos],
-    email:[null, this.vaidarCampos],
-    confemail:[null,this.vaidarCampos],
+    email:['', this.vaidarCampos],
+    confemail:['',this.vaidarCampos],
     senha:[null, this.vaidarCampos],
     dataNasc:[''],
     sexo:['']

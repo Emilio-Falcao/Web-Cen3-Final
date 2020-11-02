@@ -5,22 +5,28 @@ export const PlayLista: Lista[] = [
     id:'1',
     album:'Anos 80',
     nome: 'As Mais dos Anos 80',
-    audio: [{musica:  '../../../assets/audio/musica5.mpeg ',
+    audio: [
+            {musica:  '../../../assets/audio/musica5.mpeg ',
             nome:" Musica Boa : ",
             id:'1 : ',
             artista: " Boby Marley :"},
+            
             {musica:  '../../../assets/audio/musica3.mpeg',
             nome:"Musica Boa : ",
             id:'2 : ',artista:"Michel Jakson : "},
+            
             {musica:'../../../assets/audio/musica2.mpeg',
             nome:"Musica Boa : ",
             id:'3 : ',artista:   "   Prince Prince  :"},
+            
             {musica:'../../../assets/audio/musica4.mpeg',
             nome:"Musica Boa : ",
             id:'4 : ',artista:"  Jhon Bom Jovi     : "},
+            
             {musica:'../../../assets/audio/musica1.mpeg',
             nome:"Musica Boa : ",
             id:'5 : ',artista:"  Paulo Mendes:"},
+            
             {musica:'../../../assets/audio/musica2.mpeg',
             nome:"Musica Boa : ",
             id:'6 : ',artista:"Rick  T Martim   "},
@@ -211,9 +217,11 @@ export const PlayLista: Lista[] = [
     id:'8',
     album:'Forro',
     nome: 'Forro das Antigas',
-    audio: [{musica:'../../../assets/audio/musica5.mpeg',
+    audio: [
+    {musica:'../../../assets/audio/musica5.mpeg',
     nome:"Musica Boa : ",
     id:'1 : ',artista:"Michel Jakson"},
+    
     {musica:'../../../assets/audio/musica3.mpeg',
     nome:"Musica Boa : ",
     id:'2 : ',artista:"Michel Jakson"},
